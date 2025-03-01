@@ -1,0 +1,23 @@
+{
+  "name": "ktsgmr-web-server",
+  "version": "1.0.0",
+  "description": "my web server",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint",
+    "format": "eslint --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^4.1.0",
+    "@types/node": "^22.13.8",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.25.0"
+  }
+}
