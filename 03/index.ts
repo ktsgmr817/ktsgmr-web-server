@@ -1,7 +1,7 @@
 import net from "net";
 
 // new connections callback
-const newConnectionCallback = (socket: net.Socket) => {
+const newConn = (socket: net.Socket) => {
   console.log("new connection", socket.remoteAddress, socket.remotePort);
   // read and write
   socket.on("end", () => {
@@ -24,7 +24,7 @@ const newConnectionCallback = (socket: net.Socket) => {
 // create a Listening Socket
 const server: net.Server = net.createServer();
 // register a callback
-server.on("connection", newConnectionCallback);
+server.on("connection", newConn);
 // error handling
 server.on("error", (err: Error) => {
   throw err;
